@@ -57,13 +57,13 @@ int main() {
 
     cin >> ch;
 
-    // reverseString(ch, strlen(ch));
+    reverseString(ch, strlen(ch));
 
-    string s = "Ishan";
+    // string s = "Ishan";
 
-    reverse(s.begin(), s.end());
+    // reverse(s.begin(), s.end());
 
-    cout << s << endl;
+    // cout << s << endl;
 
     // cin.getline(ch, 100);
 
