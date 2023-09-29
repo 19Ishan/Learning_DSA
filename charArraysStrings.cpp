@@ -5,6 +5,15 @@
 
 using namespace std;
 
+//printing the char array
+void printCharArray(char ch[], int n){
+    int index = 0;
+    while(ch[index] != '\0'){
+        cout << ch[index];
+        index++;
+    }
+}
+
 //1. Finding the length of the char array
 //A. Using the while loop
 /*
@@ -49,15 +58,54 @@ void reverseString(char ch[], int n){
     }
 }
 
+//3. Lower Case to Upper Case
+void lowerToUpper(char ch[], int n){
+    int index = 0;
+    while(ch[index] != '\0'){
+        if(ch[index] >= 'a' && ch[index] <= 'z'){
+            ch[index] = ch[index] - 'a' + 'A';
+        }
+        index++;
+    }
+}
+
+//4. Replace the charaters
+//here -> replace '@' with ' '
+void replaceChars(char ch[], int n){
+    int index = 0;
+
+    while(ch[index] != '\0'){
+        if(ch[index] == '@'){
+            ch[index] = ' ';
+        }
+
+        index++;
+    }
+}
+
 int main() {
 
     char ch[100];
 
+    int n = 100;
+
     cout << "Enter a sentence: " << endl;
 
-    cin >> ch;
+    cin.getline(ch, 100);
 
-    reverseString(ch, strlen(ch));
+    // reverseString(ch, strlen(ch));
+
+    // lowerToUpper(ch, n);
+
+    replaceChars(ch, n);
+
+    printCharArray(ch, n);
+
+    // cout << ch << endl;
+
+
+
+
 
     // string s = "Ishan";
 
