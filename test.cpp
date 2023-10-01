@@ -563,7 +563,7 @@ int main() {
     // shiftElementsLeftByOne(arr, n);
     // printArr(arr, n);
 
-    cout << endl;
+    // cout << endl;
 
     // shiftElementsLeftByOne(arr, n);
     // printArr(arr, n);
@@ -691,6 +691,28 @@ int main() {
     //     cout << endl;
     // }
 
+    for(int i = 0 ; i < 5 ; i++){
+        if(i == 0 || i == 4){
+            for(int j = 0 ; j < 5 ; j++){
+                cout << "*" << " ";
+            }
+        }
+
+        else{
+            for(int j = 0 ; j < 5 ; j++){
+                if(j == 0 || j == 4){
+                    cout << "*" << " ";
+                }
+
+                else{
+                    cout << " " << " ";
+                }
+            }
+        }
+
+        cout << endl;
+    }
+
 //2D Arrays
     int arr[3][3] = {
         {1, 2, 3},
@@ -701,8 +723,8 @@ int main() {
     int row = 3;
     int col = 3;
 
-    transposeMatrix(arr, row, col);
-    print2DArr(arr, row, col);
+    // transposeMatrix(arr, row, col);
+    // print2DArr(arr, row, col);
 
     // transpose2DArray(arr, row, col);
 
