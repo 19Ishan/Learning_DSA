@@ -1,5 +1,6 @@
 # include<iostream>
-# include<string>
+# include<string.h>
+# include<algorithm>
 using namespace std;
 
 //1. Find the length of the char array
@@ -71,10 +72,6 @@ int main() {
     cout << "The reversed version of your name is: " << name << endl;
 
     //we can print a string without having the need to make a different printString function as in the case of the arrays
-
-    string s = "abc";
-
-    cout << s.length() << endl;
     
     return 0;
 }
