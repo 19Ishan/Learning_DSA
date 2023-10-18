@@ -2,6 +2,37 @@
 
 using namespace std;
 
+int fact(int n){
+    int ans = 1;
+
+    for(int i = n ; i >= 1 ; i--){
+        ans = ans * i;
+    }
+
+    return ans;
+}
+
+int factor(int n){
+    //base case
+    if( n == 1){
+        return 1;
+    }
+
+    return n * factor(n - 1);
+}
+
+int fibo(int n){
+    if(n == 0) {
+        return 0;
+    }
+
+    if(n == 1){
+        return 1;
+    }
+
+    return (fibo(n - 1) + fibo(n - 2));
+}
+
 int getLength(char ch[]){
     int count = 0;
 
@@ -42,15 +73,24 @@ bool checkPalindrome(char ch[], int n){
 
 int main() {
     
-    char name[20];
+    // char name[20];
 
-    cout << "Enter your name: ";
-    cin >> name;
+    // cout << "Enter your name: ";
+    // cin >> name;
 
-    int n = getLength(name);
+    // int n = getLength(name);
 
-    cout << "Palindrome or not?" << checkPalindrome
-    (name, n) << endl;
+    // cout << "Palindrome or not?" << checkPalindrome
+    // (name, n) << endl;
+
+    int n;
+    cin >> n;
+
+    // cout << fact(n) << endl;
+
+    // cout << factor(n) << endl;
+    
+    cout << fibo(n) << endl;
     
     return 0;
 }

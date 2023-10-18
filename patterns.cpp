@@ -1052,7 +1052,7 @@ int main() {
 */
 
 //8.  Diamond shaped
-
+/*
     int num = 8;
 
     int n = num / 2;
@@ -1082,6 +1082,146 @@ int main() {
         }
         cout << endl;
     }
+*/
+
+//9. Hollow Pyramid With open base
+/*
+    int n = 5;
+
+    for(int i = 0 ; i < n ; i++){
+        //spaces
+        for(int j = 0 ; j < n - i - 1 ; j++){
+            cout << " ";
+        }
+
+        //stars
+        for(int j = 0 ; j < i + 1 ; j++){
+            if(j == 0 || j == i + 1 - 1){
+                cout << "* ";
+            }
+
+            else{
+                cout << " " << " ";
+            }
+        }
+
+        cout << endl;
+    }
+*/
+
+//10. Inverted Half Pyramid With Open Base 9. wale ka reverse kardiya
+/*
+    int n = 5;
+
+    for(int i = 0 ; i < n ; i++){
+        //spaces
+        for(int j = 0 ; j < i ; j++){
+            cout << " ";
+        }
+
+        //stars
+        for(int j = 0 ; j < n - i ; j++){
+            if(j == 0 || j == n - i - 1){
+                cout << "*" << " ";
+            }
+
+            else{
+                cout << " " << " ";
+            }
+        }
+        cout << endl;
+    }
+*/
+
+//11. Hollow Diamond
+/*
+    int num = 8;
+    int n = num / 2;
+
+    //printing the upper half
+    for(int i = 0 ; i < n ; i++){
+        //spaces
+        for(int j = 0 ; j < n - i - 1 ; j++){
+            cout << " ";
+        }
+
+        //stars
+        for(int j = 0 ; j < i + 1 ; j++){
+            if(j == 0 || j == i + 1 - 1){
+                cout << "*" << " ";
+            }
+
+            else{
+                cout << " " << " ";
+            }
+        }
+        cout << endl;
+    }
+
+
+    //printing the lower half of the diamond
+    for(int i = 0 ; i < n ; i++){
+        //spaces
+        for(int j = 0 ; j < i ; j++){
+            cout << " ";
+        }
+
+        //stars
+        for(int j = 0 ; j < n - i ; j++){
+            if(j == 0 || j == n - i - 1){
+                cout << "*" << " ";
+            }
+
+            else{
+                cout << " " << " ";
+            }
+        }
+        
+        cout << endl;
+    }
+*/
+
+    //ADVANCED PATTERNS
+
+//1. Flipped Solid Diamond
+
+    int num = 8;
+    int n = num / 2;
+
+    for(int i = 0 ; i < n ; i++){
+        
+        //inverted half pyramid
+        for(int j = 0 ; j < n - i ; j++){
+            cout << "*";
+        }
+
+        //hollow pyramid
+        for(int j = 0 ; j < (2*i + 1) ; j++){
+            cout << " ";
+        }
+
+        //half pyramid
+        for(int j = 0 ; j < n - i ; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    for(int i = 0 ; i < n ; i++){
+        for(int j = 0 ; j < i + 1 ; j++){
+            cout << "*";
+        }
+
+        for(int j = 0 ; j < (2*n - 2*i - 1) ; j++){
+            cout << " ";
+        }
+
+        for(int j = 0 ; j < i + 1 ; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
 
     return 0;
 }

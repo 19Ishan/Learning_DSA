@@ -35,21 +35,28 @@ int main() {
     cout << *q << endl;
 */
     
-    int a = 100;
+    // int a = 100;
 
-    cout << &a << endl;
-    cout << a << endl;
+    // cout << &a << endl;
+    // cout << a << endl;
 
-    int *p = &a;
+    // int *p = &a;
 
-    cout << p << endl;
-    cout << *p << endl;
+    // cout << p << endl;
+    // cout << *p << endl;
 
-    int *q = p;
+    // int *q = p;
 
-    cout << q << endl;
-    cout << *q << endl;
-    cout << &q << endl;
+    // cout << q << endl;
+    // cout << *q << endl;
+    // cout << &q << endl;
+
+    int arr[5] = {10, 20, 30, 40, 50};
+
+    int * p = arr;
+    int * q = (arr + 1);
+
+    cout << *(q + 4) << endl;
 
         
 

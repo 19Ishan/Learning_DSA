@@ -691,25 +691,33 @@ int main() {
     //     cout << endl;
     // }
 
-    for(int i = 0 ; i < 5 ; i++){
-        if(i == 0 || i == 4){
-            for(int j = 0 ; j < 5 ; j++){
-                cout << "*" << " ";
-            }
+    int longgg = 10;
+    int * ptr = &longgg;
+
+    cout << sizeof(long);
+
+    int n = 6;
+    int N = n/2;
+
+    for(int i = 0 ; i < N ; i++){
+        for(int j = 0 ; j < N - i - 1 ; j++){
+            cout << " ";
         }
 
-        else{
-            for(int j = 0 ; j < 5 ; j++){
-                if(j == 0 || j == 4){
-                    cout << "*" << " ";
-                }
+        for(int j = 0 ; j < i + 1 ; j++){
+            cout << "*" << " ";
+        }
+        cout << endl;
+    }
 
-                else{
-                    cout << " " << " ";
-                }
-            }
+    for(int i = 0 ; i < N ; i++){
+        for(int j = 0 ; j < i ; j++){
+            cout << " ";
         }
 
+        for(int j = 0 ; j < N - i ; j++){
+            cout << "*" << " ";
+        }
         cout << endl;
     }
 
