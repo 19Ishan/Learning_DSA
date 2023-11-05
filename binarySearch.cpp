@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//A. Iterative Approach
 int binarySearch(int arr[], int size, int key){
     int s = 0;
     int e = size - 1;
@@ -25,6 +26,38 @@ int binarySearch(int arr[], int size, int key){
     }
 
     return -1;
+}
+
+//B. Recursive Appraoch
+int bSearchRecursion(int arr[], int s, int e, int target){
+
+    //base case
+    if(s > e){
+        return -1;
+    }
+
+    //processing
+
+    //ek case main solve karunga 
+    //baaki recursion
+
+    int mid = s + (e - s)/2;
+
+    if(arr[mid] == target){
+        return mid;
+    }
+
+    //recursive calls
+
+    if(arr[mid] < target){
+        //go in right
+        bSearchRecursion(arr, mid + 1, e, target);
+    }
+
+    else{
+        //go in left
+        bSearchRecursion(arr, s, mid - 1, target);
+    }
 }
 
 int main() {

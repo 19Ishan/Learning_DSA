@@ -54,5 +54,6 @@
         "xtr1common": "cpp",
         "xtree": "cpp"
     },
-    "python.autoComplete.extraPaths": []
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.extraPaths": []
 }
