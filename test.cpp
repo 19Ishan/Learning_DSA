@@ -3,6 +3,7 @@
 # include<math.h>
 # include<vector>
 #include<string>
+# include<algorithm>
 
 using namespace std;
 
@@ -547,6 +548,27 @@ void transposeMatrix(int arr[][3], int row, int col){
 
 int main() {
 
+    int arr[6] = {3, 1, 0, 10, 8, 9};
+
+    int n = 6;
+
+    vector<int> v;
+
+    v.push_back(10);
+    v.push_back(0);
+    v.push_back(2);
+    v.push_back(40);
+    v.push_back(3);
+    v.push_back(5);
+
+    int size = v.size();
+
+    sort(v.begin(), v.begin() + 5);
+
+    for(int n: v){
+        cout << n << " ";
+    }
+
     // int arr[6] = {2, 0, 1, 2, 0, 1};
     // int arr[6] = {0, 2, 1, 2, 1, 0};
     // int n = 6;
@@ -691,45 +713,45 @@ int main() {
     //     cout << endl;
     // }
 
-    int longgg = 10;
-    int * ptr = &longgg;
+//     int longgg = 10;
+//     int * ptr = &longgg;
 
-    cout << sizeof(long);
+//     cout << sizeof(long);
 
-    int n = 6;
-    int N = n/2;
+//     int n = 6;
+//     int N = n/2;
 
-    for(int i = 0 ; i < N ; i++){
-        for(int j = 0 ; j < N - i - 1 ; j++){
-            cout << " ";
-        }
+//     for(int i = 0 ; i < N ; i++){
+//         for(int j = 0 ; j < N - i - 1 ; j++){
+//             cout << " ";
+//         }
 
-        for(int j = 0 ; j < i + 1 ; j++){
-            cout << "*" << " ";
-        }
-        cout << endl;
-    }
+//         for(int j = 0 ; j < i + 1 ; j++){
+//             cout << "*" << " ";
+//         }
+//         cout << endl;
+//     }
 
-    for(int i = 0 ; i < N ; i++){
-        for(int j = 0 ; j < i ; j++){
-            cout << " ";
-        }
+//     for(int i = 0 ; i < N ; i++){
+//         for(int j = 0 ; j < i ; j++){
+//             cout << " ";
+//         }
 
-        for(int j = 0 ; j < N - i ; j++){
-            cout << "*" << " ";
-        }
-        cout << endl;
-    }
+//         for(int j = 0 ; j < N - i ; j++){
+//             cout << "*" << " ";
+//         }
+//         cout << endl;
+//     }
 
-//2D Arrays
-    int arr[3][3] = {
-        {1, 2, 3},
-        {5, 6, 7},
-        {9, 10, 11}
-    };
+// //2D Arrays
+//     int arr[3][3] = {
+//         {1, 2, 3},
+//         {5, 6, 7},
+//         {9, 10, 11}
+//     };
 
-    int row = 3;
-    int col = 3;
+//     int row = 3;
+//     int col = 3;
 
     // transposeMatrix(arr, row, col);
     // print2DArr(arr, row, col);
