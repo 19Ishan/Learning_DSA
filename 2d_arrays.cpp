@@ -11,14 +11,15 @@ void printRowWise(int arr[][3]){
     }
 }
 
-void printColWise(int arr[][3]){
-    for(int col = 0 ; col < 3 ; col++){
-        for(int row = 0 ; row < 3 ; row++){
-            cout << arr[col][row] << " ";
-        }
-        cout << endl;
-    }
-}
+// void printColWise(int arr[][3]){
+//     for(int col = 0 ; col < 3 ; col++){
+//         for(int row = 0 ; row < 3 ; row++){
+//             cout << arr[col][row] << " ";
+//         }
+//         cout << endl;
+//     }
+// }
+
 
 int main() {
     
@@ -74,6 +75,7 @@ int main() {
         {4, 5, 6},
         {7, 8, 9}
     };
+
 
 //printing the 2D array
 /*

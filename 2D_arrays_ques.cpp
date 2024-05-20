@@ -216,7 +216,30 @@ void printReverseDiag(int arr[][3], int row, int col){
 }
 */
 
-//9. 
+//9. Find the transpose of a 2D Matrix
+
+void transpose2DMatrix(int arr[][3], int row, int col){
+    // bool temp[][3] = {
+    //                     {false, false, false},
+    //                     {false, false, false},
+    //                     {false, false, false},
+    //                 };
+
+    // for(int i = 0 ; i < row ; i++){
+    //     for(int j = 0 ; j < col ; j++){
+    //         if(arr[i][j] == false){
+    //             swap(arr[i][j], arr[j][i]);
+    //             temp[i][j] = true;
+    //         }
+    //     }
+    // }
+
+    for(int i = 0 ; i < row ; i++){
+        for(int j = 0 ; j < i + 1 ; j++){
+            swap(arr[i][j], arr[j][i]);
+        }
+    }
+}
 
 
 
@@ -232,6 +255,15 @@ int main() {
 
     int row = 3;
     int col = 3;
+
+    transpose2DMatrix(arr, row, col);
+
+    for(int i = 0 ; i < row ; i++){
+        for(int j = 0 ; j < col ; j++){
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
 
     
 //Taking row wise input

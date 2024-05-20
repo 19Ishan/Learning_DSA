@@ -52,8 +52,18 @@
         "xmemory": "cpp",
         "xstddef": "cpp",
         "xtr1common": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "xhash": "cpp"
     },
     "python.autoComplete.extraPaths": [],
-    "python.analysis.extraPaths": []
+    "python.analysis.extraPaths": [],
+    "cSpell.words": [
+        "Anwar",
+        "baaki",
+        "inorder",
+        "Subarrays",
+        "wala"
+    ],
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableCodeActions": false
 }

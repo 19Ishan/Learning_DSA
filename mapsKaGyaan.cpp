@@ -15,7 +15,7 @@ int main() {
     m[4] = "Amazing";
 
     for(auto i : m){
-        cout << "The key is: " <<i.first << " and the value is: " << i.second << endl;
+        cout << "The key is: " << i.first << " and the value is: " << i.second << endl;
     }
 
     cout << "Finding a key 2: " << m.count(2) << endl;

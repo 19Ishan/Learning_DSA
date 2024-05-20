@@ -548,26 +548,26 @@ void transposeMatrix(int arr[][3], int row, int col){
 
 int main() {
 
-    int arr[6] = {3, 1, 0, 10, 8, 9};
+    // int arr[6] = {3, 1, 0, 10, 8, 9};
 
-    int n = 6;
+    // int n = 6;
 
-    vector<int> v;
+    // vector<int> v;
 
-    v.push_back(10);
-    v.push_back(0);
-    v.push_back(2);
-    v.push_back(40);
-    v.push_back(3);
-    v.push_back(5);
+    // v.push_back(10);
+    // v.push_back(0);
+    // v.push_back(2);
+    // v.push_back(40);
+    // v.push_back(3);
+    // v.push_back(5);
 
-    int size = v.size();
+    // int size = v.size();
 
-    sort(v.begin(), v.begin() + 5);
+    // sort(v.begin(), v.begin() + 5);
 
-    for(int n: v){
-        cout << n << " ";
-    }
+    // for(int n: v){
+    //     cout << n << " ";
+    // }
 
     // int arr[6] = {2, 0, 1, 2, 0, 1};
     // int arr[6] = {0, 2, 1, 2, 1, 0};
@@ -776,6 +776,26 @@ int main() {
     // findRowWiseSum(arr, row, col);
 
     // findColWiseSum(arr, row, col);
+
+    int n = 3;
+
+    int i = 0;
+    while(i < n){
+        //spaces
+        int j = 0;
+        while(j < i){
+            cout << " " << " ";
+            j++;
+        }
+
+        while(j < n - i){
+            cout << "*" << " ";
+            j++;
+        }
+        i++;
+
+        cout << endl;
+    }
 
 
     return 0;

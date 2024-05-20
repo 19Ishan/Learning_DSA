@@ -83,23 +83,54 @@ void replaceChars(char ch[], int n){
     }
 }
 
+//5. Check Palindrome or not
+
+bool checkPalindrome(char ch[], int lenCharArray) {
+    int index = 0;
+
+    int s = 0;
+    int e = lenCharArray - 1;
+
+    while(s >= e) {
+        if(ch[s] == ch[e]) {
+            s++;
+            e--;
+        }
+        else {
+            return false;
+        }
+    }
+    return true;
+}
+
 int main() {
 
     char ch[100];
 
-    int n = 100;
+    int n = 100; //maximum space to store characters in the char array
+
 
     cout << "Enter a sentence: " << endl;
 
     cin.getline(ch, 100);
 
+    int lenCharArray = strlen(ch);
+
+    if(checkPalindrome(ch, n)) {
+        cout << "It is a palindrome" << endl;
+    }
+
+    else {
+        cout << "Not a palindrome" << endl;
+    }
+
     // reverseString(ch, strlen(ch));
 
     // lowerToUpper(ch, n);
 
-    replaceChars(ch, n);
+    // replaceChars(ch, n);
 
-    printCharArray(ch, n);
+    // printCharArray(ch, n);
 
     // cout << ch << endl;
 
